@@ -1,18 +1,68 @@
-#what .items{
-    display: block;
-    padding: 1rem;
+#what .items {
+  display: block;
+  padding: 1rem;
 }
 
 /* Align Item to Left */
 
-#what .items .item{
-    display: flex;
-    text-align: left;
+#what .items .item {
+  display: flex;
+  text-align: left;
 }
 
+#what .items .item i {
+  margin-right: 2.3rem;
+  align-self: center;
+  margin-bottom: 0;
+}
 
-#what .items .item i{
-    margin-right: 2.3rem;
-    align-self: center;
-    margin-bottom: 0;
+/* Smartphone */
+
+@media (max-width: 500px) {
+  #navbar {
+    flex-direction: column;
+    align-items: center;
+    opacity: 0.9;
+  }
+  #navbar .logo {
+    margin-bottom: 0.5rem;
+    text-align: center;
+  }
+  #navbar ul a:hover {
+    background-color: #93cb52;
+    border-radius: 5px;
+    padding: 0.35rem;
+  }
+  #navbar ul {
+    padding: 0.5rem;
+  }
+
+  #showcase .showcase-content {
+    top: 110px;
+  }
+
+  #who {
+    display: block;
+  }
+  #who .who-img {
+    display: none;
+  }
+
+  #clients .items img {
+    width: 80%;
+  }
+  #clients .items div:last-child {
+    display: none;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+  /* #contact.map {
+    background: url("../img/map.png") no-repeat center center/cover;
+    height: 200px;
+    width: 100%;
+    background-color: red;
+    border-top: 4px solid #333;
+  } */
 }
